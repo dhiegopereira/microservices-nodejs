@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  micro_services:
+    image: node:18
+    restart: always
+    working_dir: /app   
+    volumes:
+      - ./app:/app
+      - /var/run/docker.sock:/var/run/docker.sock
+    expose:
+      - 8080
+    ports:
+      - 8080:8080
+    command: sh -c 'yarn && yarn start'

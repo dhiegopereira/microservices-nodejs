@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  service_csharp:
+    extends:
+      file: ./services/service_csharp/docker-compose.yml
+      service: service_csharp
+
+  service_java:
+    extends:
+      file: ./services/service_java/docker-compose.yml
+      service: service_java
+
+  service_nodejs:
+    extends:
+      file: ./services/service_nodejs/docker-compose.yml
+      service: service_nodejs
+
+  micro_services:
+    extends:
+      file: ./micro_services/docker-compose.yml
+      service: micro_services

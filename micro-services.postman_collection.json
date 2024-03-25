@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "796f1f61-4ecb-41e0-a8d6-4126715368eb",
+		"name": "micro-services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3166323",
+		"_collection_link": "https://cloudy-sunset-749468.postman.co/workspace/Sample~26080670-2abe-4eca-9e23-00315d8ecd90/collection/3166323-796f1f61-4ecb-41e0-a8d6-4126715368eb?action=share&source=collection_link&creator=3166323"
+	},
+	"item": [
+		{
+			"name": "micro_services",
+			"item": [
+				{
+					"name": "status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/docker/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"docker",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "start",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/docker/microservices-nodejs-service_nodejs-1/start",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"docker",
+								"microservices-nodejs-service_nodejs-1",
+								"start"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "stop",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/docker/microservices-nodejs-service_nodejs-1/stop",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"docker",
+								"microservices-nodejs-service_nodejs-1",
+								"stop"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "api_nodejs",
+			"item": [
+				{
+					"name": "init",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003"
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "api_java",
+			"item": [
+				{
+					"name": "init",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002"
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "api_csharp",
+			"item": [
+				{
+					"name": "init",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001"
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

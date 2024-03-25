@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  service_nodejs:
+    image: node:18
+    restart: always
+    working_dir: /app   
+    volumes:
+      - ./app:/app
+    expose:
+      - 3003
+    ports:
+      - 3003:3003
+    command: sh -c 'yarn && yarn start:dev'
